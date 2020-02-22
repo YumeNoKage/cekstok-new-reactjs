@@ -1,0 +1,70 @@
+.fixed-center {
+  position: fixed;
+  left: 10%;
+  right: 50%;
+  top: 40%;
+}
+
+.body-login {
+  /* box-shadow: 0 0 12px #81d4fa; */
+  background: linear-gradient(300deg, #6a1b9a, #039be5 60%);
+}
+
+.border-0 {
+  border: none !important;
+}
+
+.text-decoration-none {
+  list-style-type: none;
+}
+.title-h3 {
+  color: #424242;
+  font-size: 20px;
+}
+
+a:hover {
+  text-decoration: none !important;
+  color: #424242;
+}
+.title-h3:active::after {
+  content: " ";
+  width: 50%;
+  margin: auto;
+  border-bottom: 3px solid #ffffff;
+  display: block;
+  padding-bottom: 5px;
+  margin-bottom: -8px;
+}
+.title-h3:hover::after {
+  content: " ";
+  width: 50%;
+  margin: auto;
+  border-bottom: 3px solid #ffffff;
+  display: block;
+  padding-bottom: 5px;
+  margin-bottom: -8px;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo-cekstok {
+    display: none;
+  }
+  .body-login {
+    margin: auto;
+  }
+  .row {
+    margin: unset;
+  }
+}
+
+@media only screen and (min-width: 770px) {
+  .logo-cekstok-2 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .fixed-center {
+    left: 4%;
+  }
+}
