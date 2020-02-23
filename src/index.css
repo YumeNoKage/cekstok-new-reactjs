@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: proxima-reguler, proxima-bold;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+  -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+  display: none !important;
+}
+/* .swal2-container.swal2-center.swal2-backdrop-show:active::-webkit-scrollbar {
+  display: none;
+} */
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@font-face {
+  font-family: proxima-reguler;
+  src: url(./Asset/font/ProximaNova-Regular.otf);
+}
+
+@font-face {
+  font-family: proxima-bold;
+  src: url(./Asset/font/ProximaNova-Bold.otf);
+}
