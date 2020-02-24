@@ -1,10 +1,9 @@
 import React from "react";
 import "./login.css";
 import EyeShow from "../../Asset/icon/eye-show.svg";
-import swal from "sweetalert2";
-import { withSwalInstance } from "sweetalert2-react";
-
-const SweetAlert = withSwalInstance(swal);
+import Swal from "sweetalert2";
+// import { withSwalInstance } from "sweetalert2-react";
+// import withReactContent from 'sweetalert2-react-content'
 
 class Register extends React.Component {
   constructor(props) {
@@ -31,6 +30,18 @@ class Register extends React.Component {
   }
   toggleShows() {
     this.setState({ hidden2: !this.state.hidden2 });
+  }
+
+  HandleClickRegister() {
+    Swal.fire({
+      icon: "success",
+      type: "success",
+      title:
+        '<strong><h2 class="font-36 proxima-bold mt-3 mb-3">Registrasi Berhasil!</h2></strong>',
+      html:
+        '<div class="container"><h6 class="font-24 proxima-bold">Cek email Anda Untuk melakukan aktifasi.</h6> <br> <p class="font-16 color-bb proxima-reguler">Pendaftaran member menunggu aktifasi. Cek email Anda.</p></div>',
+      confirmButtonColor: "#007fff"
+    });
   }
 
   componentDidMount() {
@@ -149,18 +160,12 @@ class Register extends React.Component {
 
                 <button
                   className="btn btn-primary w-100 mt-3 proxima-bold mb-5"
-                  onClick={() => this.setState({ show: true })}
+                  onClick={this.HandleClickRegister}
+                  type="button"
                 >
                   Register
                 </button>
               </form>
-              <SweetAlert
-                show={this.state.show}
-                icon="Success"
-                title="Success"
-                text="Terimakasih telah melakukan registrasi"
-                onConfirm={() => this.setState({ show: false })}
-              />
             </div>
           </div>
         </div>
