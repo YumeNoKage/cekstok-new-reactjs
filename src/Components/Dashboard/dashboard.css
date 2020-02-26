@@ -1,0 +1,79 @@
+/* .navbar1 {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+.navbar1 a {
+  float: left;
+  color: white;
+  text-align: center;
+  /* padding: 14px 16px; */
+  text-decoration: none;
+}
+
+.dropdown1 {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown1 .dropbtn1 {
+  border: none;
+  outline: none;
+  color: white;
+  /* padding: 14px 16px; */
+}
+
+.navbar1 a:hover,
+.dropdown1:hover .dropbtn1 {
+  background-color: red;
+}
+
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background: transparent;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown1:hover .dropdown-content1 {
+  display: block;
+  transition: ease-in-out 1s;
+}
+
+/* Create three equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 20%;
+  padding: 10px;
+}
+
+.column1 a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.column1 a:hover {
+  background-color: #dddddd;
+  transition: ease-in-out 500ms;
+  box-shadow: 2px -2px 12px #dddddd7c;
+  border-radius: 4px;
+}
+
+/* Clear floats after the columns */
+.row1 {
+  background-color: rgba(130, 174, 255, 0.726);
+  margin-top: 1.5rem;
+}
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
